@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import "./imports/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100wh;
+    background-color: $color4;
+    font-family: $font;
+    color: $color4;
+
+    header {
+        background-color: $color1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+        color: $color3;
+        box-shadow: 0 0 15px black;
+        z-index: 9999999999;
+        position: relative;
+        
+        div {
+            margin-left: 30px;
+            
+            a {
+                font-size: 45px;
+                color: $color3;
+                text-decoration: none;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: $color4;
+                }
+            }
+        }
+
+        nav {
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                margin-right: 10px;
+
+                li {
+
+                    a {
+                        text-decoration: none;
+                        padding: 10px 15px;
+                        font-size: 20px;
+                        color: $color3;
+                        transition: all 0.5s;
+
+                        &:hover {
+                            color: $color4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    main {
+        background-color: $color2;
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80vw;
+            height: 500px;
+            margin: auto;
+
+            div {
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h2 {
+                    font-size: 70px;
+                    text-transform: uppercase;
+                    color: $color5;
+                }
+                
+                h3 {
+                    font-size: 25px;
+                    color: $color3;
+                }
+                
+                p {
+                    font-size: 20px;
+                    margin-top: 30px;
+                    color: $color3;
+                }
+            }
+
+            figure {
+                background-image: url("../img/ezgif.com-gif-maker.gif");
+                height: 400px;
+                width: 550px;
+                background-size: contain;
+            }
+        }
+    }
+
+    .contacto {
+        display: flex;
+        justify-content: space-evenly;
+        color: rgb(83, 61, 24);
+        margin-top: 40px;
+        height: 75vh;
+
+        .info {
+            width: 45vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            &--socialmedia {
+                display: flex;
+                flex-direction: column;
+                height: 25vh;
+                width: 40vw;
+
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        margin: 10px;
+                    }
+                }
+
+                p {
+                    margin: 30px 0;
+                }
+            }
+
+            &--map {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 45vh;
+                width: 40vw;
+
+                &--location {
+                    display: flex;
+
+                    .material-symbols-outlined {
+                        font-variation-settings:
+                            'FILL' 1,
+                            'wght' 400,
+                            'GRAD' 0,
+                            'opsz' 48
+                    }
+                }
+            }
+        }
+
+        .formContainer{
+            width: 40vw;
+            display: flex;
+            justify-content: center;
+            
+            .form {
+                background-color: $color3;
+                border: 2px solid $color1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 0 15px;
+                height: 75vh;
+                width: 30vw;
+
+                &--title {
+                    width: 25vw;
+                    text-align: start;
+                }
+
+                &--inputs {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 45vh;
+                    
+                    input {
+                        border: 2px solid $color1;
+                        padding: 10px;
+                        width: 25vw;
+                        font-family: $font;
+                        background-color: $color4;
+
+                        &::placeholder {
+                            color: $color3;
+                        }
+                    }
+
+                    textarea {
+                        border: 2px solid $color1;
+                        padding: 10px;
+                        font-family: $font;
+                        background-color: $color4;
+                        resize: none;
+
+                        &::placeholder {
+                            color: $color3;
+                        }
+                    }
+                }
+
+                &--button {
+                    padding: 8px 20px;
+                    border: 2px solid $color1;
+                    background-color: $color1;
+                    color: $color4;
+                    font-family: $font;
+                    cursor: pointer;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        background-color: $color4;
+                        color: $color1;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100wh;
+  background-color: #F0EBCE;
+  font-family: "Forum", cursive;
+  color: #F0EBCE;
+}
+
+body header {
+  background-color: #395144;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+  color: #AA8B56;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
+  z-index: 9999999999;
+  position: relative;
+}
+
+body header div {
+  margin-left: 30px;
+}
+
+body header div a {
+  font-size: 45px;
+  color: #AA8B56;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body header div a:hover {
+  color: #F0EBCE;
+}
+
+body header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+body header nav ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: #AA8B56;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body header nav ul li a:hover {
+  color: #F0EBCE;
+}
+
+body main {
+  background-color: #4E6C50;
+}
+
+body main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vw;
+  height: 500px;
+  margin: auto;
+}
+
+body main section div {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main section div h2 {
+  font-size: 70px;
+  text-transform: uppercase;
+  color: #8C271E;
+}
+
+body main section div h3 {
+  font-size: 25px;
+  color: #AA8B56;
+}
+
+body main section div p {
+  font-size: 20px;
+  margin-top: 30px;
+  color: #AA8B56;
+}
+
+body main section figure {
+  background-image: url("../img/ezgif.com-gif-maker.gif");
+  height: 400px;
+  width: 550px;
+  background-size: contain;
+}
+
+body .contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #533d18;
+  margin-top: 40px;
+  height: 75vh;
+}
+
+body .contacto .info {
+  width: 45vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .contacto .info--socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 25vh;
+  width: 40vw;
+}
+
+body .contacto .info--socialmedia ul {
+  list-style-type: none;
+}
+
+body .contacto .info--socialmedia ul li {
+  margin: 10px;
+}
+
+body .contacto .info--socialmedia p {
+  margin: 30px 0;
+}
+
+body .contacto .info--map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 45vh;
+  width: 40vw;
+}
+
+body .contacto .info--map--location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .contacto .info--map--location .material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+body .contacto .formContainer {
+  width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .contacto .formContainer .form {
+  background-color: #AA8B56;
+  border: 2px solid #395144;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  height: 75vh;
+  width: 30vw;
+}
+
+body .contacto .formContainer .form--title {
+  width: 25vw;
+  text-align: start;
+}
+
+body .contacto .formContainer .form--inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 45vh;
+}
+
+body .contacto .formContainer .form--inputs input {
+  border: 2px solid #395144;
+  padding: 10px;
+  width: 25vw;
+  font-family: "Forum", cursive;
+  background-color: #F0EBCE;
+}
+
+body .contacto .formContainer .form--inputs input::-webkit-input-placeholder {
+  color: #AA8B56;
+}
+
+body .contacto .formContainer .form--inputs input:-ms-input-placeholder {
+  color: #AA8B56;
+}
+
+body .contacto .formContainer .form--inputs input::-ms-input-placeholder {
+  color: #AA8B56;
+}
+
+body .contacto .formContainer .form--inputs input::placeholder {
+  color: #AA8B56;
+}
+
+body .contacto .formContainer .form--inputs textarea {
+  border: 2px solid #395144;
+  padding: 10px;
+  font-family: "Forum", cursive;
+  background-color: #F0EBCE;
+  resize: none;
+}
+
+body .contacto .formContainer .form--inputs textarea::-webkit-input-placeholder {
+  color: #AA8B56;
+}
+
+body .contacto .formContainer .form--inputs textarea:-ms-input-placeholder {
+  color: #AA8B56;
+}
+
+body .contacto .formContainer .form--inputs textarea::-ms-input-placeholder {
+  color: #AA8B56;
+}
+
+body .contacto .formContainer .form--inputs textarea::placeholder {
+  color: #AA8B56;
+}
+
+body .contacto .formContainer .form--button {
+  padding: 8px 20px;
+  border: 2px solid #395144;
+  background-color: #395144;
+  color: #F0EBCE;
+  font-family: "Forum", cursive;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body .contacto .formContainer .form--button:hover {
+  background-color: #F0EBCE;
+  color: #395144;
+}
+/*# sourceMappingURL=style.css.map */

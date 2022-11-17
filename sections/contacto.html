@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Contacto | Broglia</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="../index.html">BROGLIA</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./section1.html">Sección 1</a></li>
+                <li><a href="./section2.html">Sección 2</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contacto">
+        <div class="info">
+            <div class="info--socialmedia">
+                <ul>
+                    <li>Instagram</li>
+                    <li>Correo electrónico</li>
+                    <li>WhatsApp</li>
+                </ul>
+                <p>Nuestros horarios de atención son _____</p>
+            </div>
+
+            <div class="info--map">
+                <h3 class="info--map--title">Nuestra ubicación</h3>
+                <img class="info--map--iframe" src="../img/placeholder.png" alt="iframe" height="200" width="400">
+                <div class="info--map--location">
+                    <span class="material-symbols-outlined"> location_on </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="formContainer">
+            <div class="form">
+                <h3 class="form--title">¡Contactanos!</h3>
+
+                <div class="form--inputs">
+                    <input type="text" name="nombre" id="name" placeholder="Nombre y Apellido">
+                    <input type="number" name="celular" id="phone" placeholder="Celular">
+                    <input type="email" name="email" id="email" placeholder="Dirección de correo electrónico">
+                    <textarea name="mensaje" id="message" rows="6" placeholder="Dejanos tu mensaje"></textarea>
+                </div>
+
+                <input class="form--button" id="formBtn" type="submit" value="Enviar">
+            </div>
+        </div>
+    </section>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
