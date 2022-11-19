@@ -43,7 +43,7 @@ body header div a {
 }
 
 body header div a:hover {
-  color: #F0EBCE;
+  color: #8C271E;
 }
 
 body header nav ul {
@@ -131,7 +131,7 @@ body .contacto {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  color: #533d18;
+  color: #8C271E;
   margin-top: 40px;
   height: 75vh;
 }
@@ -161,8 +161,9 @@ body .contacto .info--socialmedia {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 25vh;
+  height: 30vh;
   width: 40vw;
+  font-size: 18px;
 }
 
 body .contacto .info--socialmedia ul {
@@ -170,11 +171,26 @@ body .contacto .info--socialmedia ul {
 }
 
 body .contacto .info--socialmedia ul li {
-  margin: 10px;
+  margin: 15px;
+}
+
+body .contacto .info--socialmedia ul li i {
+  width: 28px;
+}
+
+body .contacto .info--socialmedia ul li a {
+  text-decoration: none;
+  color: #8C271E;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body .contacto .info--socialmedia ul li a:hover {
+  text-decoration: underline;
 }
 
 body .contacto .info--socialmedia p {
-  margin: 30px 0;
+  margin: 15px 0;
 }
 
 body .contacto .info--map {
@@ -192,14 +208,18 @@ body .contacto .info--map {
   width: 40vw;
 }
 
+body .contacto .info--map h3 {
+  font-size: 20px;
+}
+
 body .contacto .info--map--location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .contacto .info--map--location .material-symbols-outlined {
-  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+body .contacto .info--map--location p {
+  margin-left: 10px;
 }
 
 body .contacto .formContainer {
@@ -258,22 +278,23 @@ body .contacto .formContainer .form--inputs input {
   width: 25vw;
   font-family: "Forum", cursive;
   background-color: #F0EBCE;
+  color: #8C271E;
 }
 
 body .contacto .formContainer .form--inputs input::-webkit-input-placeholder {
-  color: #AA8B56;
+  color: #8C271E;
 }
 
 body .contacto .formContainer .form--inputs input:-ms-input-placeholder {
-  color: #AA8B56;
+  color: #8C271E;
 }
 
 body .contacto .formContainer .form--inputs input::-ms-input-placeholder {
-  color: #AA8B56;
+  color: #8C271E;
 }
 
 body .contacto .formContainer .form--inputs input::placeholder {
-  color: #AA8B56;
+  color: #8C271E;
 }
 
 body .contacto .formContainer .form--inputs textarea {
@@ -282,22 +303,23 @@ body .contacto .formContainer .form--inputs textarea {
   font-family: "Forum", cursive;
   background-color: #F0EBCE;
   resize: none;
+  color: #8C271E;
 }
 
 body .contacto .formContainer .form--inputs textarea::-webkit-input-placeholder {
-  color: #AA8B56;
+  color: #8C271E;
 }
 
 body .contacto .formContainer .form--inputs textarea:-ms-input-placeholder {
-  color: #AA8B56;
+  color: #8C271E;
 }
 
 body .contacto .formContainer .form--inputs textarea::-ms-input-placeholder {
-  color: #AA8B56;
+  color: #8C271E;
 }
 
 body .contacto .formContainer .form--inputs textarea::placeholder {
-  color: #AA8B56;
+  color: #8C271E;
 }
 
 body .contacto .formContainer .form--button {
@@ -312,7 +334,131 @@ body .contacto .formContainer .form--button {
 }
 
 body .contacto .formContainer .form--button:hover {
-  background-color: #F0EBCE;
-  color: #395144;
+  background-color: #8C271E;
+  border: 2px solid #8C271E;
+}
+
+body footer {
+  background-color: #395144;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+body footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 20vw;
+}
+
+body footer nav ul li {
+  list-style-type: none;
+}
+
+body footer nav ul li a {
+  border: 2px solid #AA8B56;
+  border-radius: 50px;
+  padding: 12px;
+  height: 20px;
+  width: 20px;
+  color: #AA8B56;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body footer nav ul li a:hover {
+  border-color: #8C271E;
+}
+
+body footer nav ul li a i {
+  color: #AA8B56;
+  font-size: 25px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body footer nav ul li a i:hover {
+  color: #8C271E;
+}
+
+body footer div {
+  margin-top: 15px;
+}
+
+body footer div p {
+  color: #AA8B56;
+  font-weight: bolder;
+}
+
+body footer div p span {
+  color: #8C271E;
+}
+
+body .indexFooter {
+  margin-top: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #395144;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4E6C50;
+}
+
+body::-webkit-scrollbar-button:single-button {
+  background-color: #395144;
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+}
+
+body::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent #AA8B56 transparent;
+}
+
+body::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #F0EBCE transparent;
+}
+
+body::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 5px 5px 0 5px;
+  border-color: #AA8B56 transparent transparent transparent;
+}
+
+body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: #F0EBCE transparent transparent transparent;
 }
 /*# sourceMappingURL=style.css.map */
