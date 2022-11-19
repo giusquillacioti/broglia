@@ -5,10 +5,10 @@
 }
 
 body {
-  min-height: 100wh;
+  min-height: 100vh;
   background-color: #F0EBCE;
   font-family: "Forum", cursive;
-  color: #F0EBCE;
+  color: #AA8B56;
 }
 
 body header {
@@ -40,10 +40,18 @@ body header div a {
   text-decoration: none;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  text-shadow: 2px 2px 5px black;
 }
 
 body header div a:hover {
   color: #8C271E;
+}
+
+body header nav {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body header nav ul {
@@ -51,7 +59,23 @@ body header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: 10px;
+}
+
+body header nav ul li {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body header nav ul li a {
@@ -64,7 +88,15 @@ body header nav ul li a {
 }
 
 body header nav ul li a:hover {
-  color: #F0EBCE;
+  background-color: #4E6C50;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+body header nav ul li .selected {
+  background-color: #4E6C50;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 body main {
@@ -100,21 +132,22 @@ body main section div {
           justify-content: center;
 }
 
-body main section div h2 {
+body main section div h1 {
   font-size: 70px;
   text-transform: uppercase;
   color: #8C271E;
+  text-shadow: 2px 2px 10px black;
 }
 
-body main section div h3 {
+body main section div h2 {
   font-size: 25px;
-  color: #AA8B56;
+  text-shadow: 2px 2px 5px black;
 }
 
 body main section div p {
   font-size: 20px;
   margin-top: 30px;
-  color: #AA8B56;
+  text-shadow: 2px 2px 5px black;
 }
 
 body main section figure {
@@ -122,6 +155,61 @@ body main section figure {
   height: 400px;
   width: 550px;
   background-size: contain;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
+}
+
+body .amoblamientos h1 {
+  font-size: 40px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #4E6C50;
+  border-bottom: 3px solid #AA8B56;
+  text-shadow: 2px 2px 5px black;
+}
+
+body .amoblamientos--subsections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 40px 0;
+}
+
+body .amoblamientos--subsections--each {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20vw;
+  height: 50vh;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body .amoblamientos--subsections--each h2 {
+  font-size: 30px;
+  color: #8C271E;
+}
+
+body .amoblamientos--subsections--each p {
+  font-weight: bold;
+}
+
+body .amoblamientos--subsections--each:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 body .contacto {
@@ -132,7 +220,7 @@ body .contacto {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   color: #8C271E;
-  margin-top: 40px;
+  margin: 40px 0;
   height: 75vh;
 }
 
@@ -181,12 +269,10 @@ body .contacto .info--socialmedia ul li i {
 body .contacto .info--socialmedia ul li a {
   text-decoration: none;
   color: #8C271E;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 body .contacto .info--socialmedia ul li a:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 body .contacto .info--socialmedia p {
@@ -251,6 +337,8 @@ body .contacto .formContainer .form {
   padding: 0 15px;
   height: 75vh;
   width: 30vw;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
 }
 
 body .contacto .formContainer .form--title {
@@ -354,7 +442,10 @@ body footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50px;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
+  position: relative;
+  z-index: 9999999999;
 }
 
 body footer nav ul {
@@ -392,10 +483,6 @@ body footer nav ul li a {
   transition: all 0.5s;
 }
 
-body footer nav ul li a:hover {
-  border-color: #8C271E;
-}
-
 body footer nav ul li a i {
   color: #AA8B56;
   font-size: 25px;
@@ -403,7 +490,9 @@ body footer nav ul li a i {
   transition: all 0.5s;
 }
 
-body footer nav ul li a i:hover {
+body footer nav ul li a:hover,
+body footer nav ul li a:hover > i {
+  border-color: #8C271E;
   color: #8C271E;
 }
 
@@ -420,10 +509,6 @@ body footer div p span {
   color: #8C271E;
 }
 
-body .indexFooter {
-  margin-top: 0;
-}
-
 body::-webkit-scrollbar {
   width: 10px;
 }
@@ -434,6 +519,8 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #4E6C50;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
 }
 
 body::-webkit-scrollbar-button:single-button {
