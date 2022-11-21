@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   background-color: #F0EBCE;
@@ -27,7 +31,9 @@ body header {
   -webkit-box-shadow: 0 0 15px black;
           box-shadow: 0 0 15px black;
   z-index: 9999999999;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 body header div {
@@ -151,10 +157,12 @@ body main section div p {
 }
 
 body main section figure {
-  background-image: url("../img/ezgif.com-gif-maker.gif");
+  background-image: url("../img/cama.gif");
   height: 400px;
   width: 550px;
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   -webkit-box-shadow: 0 0 15px black;
           box-shadow: 0 0 15px black;
 }
@@ -162,7 +170,7 @@ body main section figure {
 body .amoblamientos h1 {
   font-size: 40px;
   text-align: center;
-  padding: 20px 0;
+  padding: 25px 0;
   background-color: #4E6C50;
   border-bottom: 3px solid #AA8B56;
   text-shadow: 2px 2px 5px black;
@@ -175,7 +183,8 @@ body .amoblamientos--subsections {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 40px 0;
+  margin: 50px 0 100px;
+  scroll-margin-top: 250px;
 }
 
 body .amoblamientos--subsections--each {
@@ -196,11 +205,13 @@ body .amoblamientos--subsections--each {
   height: 50vh;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  color: #8C271E;
+  text-decoration: none;
+  text-align: justify;
 }
 
 body .amoblamientos--subsections--each h2 {
   font-size: 30px;
-  color: #8C271E;
 }
 
 body .amoblamientos--subsections--each p {
@@ -210,6 +221,84 @@ body .amoblamientos--subsections--each p {
 body .amoblamientos--subsections--each:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+body .amoblamientos--info {
+  width: 80vw;
+  margin: auto;
+}
+
+body .amoblamientos--info--subsections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 450px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  scroll-margin-top: 135px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
+}
+
+body .amoblamientos--info--subsections--detail {
+  width: 40vw;
+  height: 350px;
+  margin-left: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .amoblamientos--info--subsections--detail h3 {
+  color: #8C271E;
+  font-size: 40px;
+}
+
+body .amoblamientos--info--subsections--detail p {
+  text-align: justify;
+}
+
+body .amoblamientos--info--subsections--detail a {
+  border: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+  color: #F0EBCE;
+  font-family: "Forum", cursive;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+body .amoblamientos--info--subsections--detail a:hover {
+  background-color: #AA8B56;
+}
+
+body .amoblamientos--info--subsections--detail--presupuesto {
+  width: 20vw;
+  background-color: #395144;
+}
+
+body .amoblamientos--info--subsections--detail--volver {
+  width: 10vw;
+  background-color: #8C271E;
+}
+
+body .amoblamientos--info--subsections figure {
+  margin-right: 5vw;
 }
 
 body .contacto {

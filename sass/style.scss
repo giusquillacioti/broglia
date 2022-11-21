@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     background-color: $color4;
@@ -21,7 +25,8 @@ body {
         color: $color3;
         box-shadow: 0 0 15px black;
         z-index: 9999999999;
-        position: relative;
+        position: sticky;
+        top: 0;
 
         div {
             margin-left: 30px;
@@ -115,10 +120,12 @@ body {
             }
 
             figure {
-                background-image: url("../img/ezgif.com-gif-maker.gif");
+                background-image: url("../img/cama.gif");
                 height: 400px;
                 width: 550px;
                 background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
                 box-shadow: 0 0 15px black;
             }
         }
@@ -128,7 +135,7 @@ body {
         h1 {
             font-size: 40px;
             text-align: center;
-            padding: 20px 0;
+            padding: 25px 0;
             background-color: $color2;
             border-bottom: 3px solid $color3;
             text-shadow: 2px 2px 5px black;
@@ -137,7 +144,8 @@ body {
         &--subsections {
             display: flex;
             justify-content: space-evenly;
-            margin: 40px 0;
+            margin: 50px 0 100px;
+            scroll-margin-top: 250px;
 
             &--each {
                 display: flex;
@@ -147,10 +155,12 @@ body {
                 width: 20vw;
                 height: 50vh;
                 transition: all 0.5s;
+                color: $color5;
+                text-decoration: none;
+                text-align: justify;
 
                 h2 {
                     font-size: 30px;
-                    color: $color5;
                 }
 
                 p {
@@ -159,6 +169,69 @@ body {
 
                 &:hover {
                     transform: scale(1.1);
+                }
+            }
+        }
+
+        &--info {
+            width: 80vw;
+            margin: auto;
+
+            &--subsections {
+                display: flex;
+                height: 450px;
+                align-items: center;
+                justify-content: space-between;
+                scroll-margin-top: 135px;
+                margin-bottom: 50px;
+                box-shadow: 0 0 15px black;
+
+                &--detail {
+                    width: 40vw;
+                    height: 350px;
+                    margin-left: 5vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    h3 {
+                        color: $color5;
+                        font-size: 40px;
+                    }
+
+                    p {
+                        text-align: justify;
+                    }
+
+                    a {
+                        border: none;
+                        transition: all 0.5s;
+                        cursor: pointer;
+                        text-decoration: none;
+                        color: $color4;
+                        font-family: $font;
+                        font-size: 20px;
+                        text-align: center;
+                        padding: 10px 0;
+
+                        &:hover {
+                            background-color: $color3;
+                        }
+                    }
+
+                    &--presupuesto {
+                        width: 20vw;
+                        background-color: $color1;
+                    }
+
+                    &--volver {
+                        width: 10vw;
+                        background-color: $color5;
+                    }
+                }
+
+                figure {
+                    margin-right: 5vw;
                 }
             }
         }
