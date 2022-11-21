@@ -13,6 +13,12 @@ body {
   background-color: #F0EBCE;
   font-family: "Forum", cursive;
   color: #AA8B56;
+  /* -------------------- HEADER -------------------- */
+  /* -------------------- INDEX -------------------- */
+  /* -------------------- CAMAS VOLCABLES -------------------- */
+  /* -------------------- AMOBLAMIENTOS -------------------- */
+  /* -------------------- CONTACTO -------------------- */
+  /* -------------------- FOOTER -------------------- */
 }
 
 body header {
@@ -120,7 +126,7 @@ body main section {
       -ms-flex-align: center;
           align-items: center;
   width: 80vw;
-  height: 500px;
+  height: 80vh;
   margin: auto;
 }
 
@@ -517,7 +523,7 @@ body .contacto .formContainer .form--button:hover {
 
 body footer {
   background-color: #395144;
-  height: 20vh;
+  height: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,5 +642,121 @@ body::-webkit-scrollbar-button:single-button:vertical:increment {
 
 body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   border-color: #F0EBCE transparent transparent transparent;
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+@media only screen and (max-width: 767px) {
+  body {
+    /* -------------------- INDEX -------------------- */
+    /* -------------------- FOOTER -------------------- */
+  }
+  body main section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main section div {
+    height: 200px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main section div h1 {
+    font-size: 50px;
+  }
+  body main section div h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  body main section div p {
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  body main section figure {
+    height: 280px;
+    width: 350px;
+  }
+  body footer {
+    background-color: #395144;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-shadow: 0 0 15px black;
+            box-shadow: 0 0 15px black;
+    position: relative;
+    z-index: 9999999999;
+  }
+  body footer nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 20vw;
+  }
+  body footer nav ul li {
+    list-style-type: none;
+  }
+  body footer nav ul li a {
+    border: 2px solid #AA8B56;
+    border-radius: 50px;
+    padding: 12px;
+    height: 20px;
+    width: 20px;
+    color: #AA8B56;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  body footer nav ul li a i {
+    color: #AA8B56;
+    font-size: 25px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  body footer nav ul li a:hover,
+  body footer nav ul li a:hover > i {
+    border-color: #8C271E;
+    color: #8C271E;
+  }
+  body footer div {
+    margin-top: 15px;
+  }
+  body footer div p {
+    color: #AA8B56;
+    font-weight: bolder;
+  }
+  body footer div p span {
+    color: #8C271E;
+  }
 }
 /*# sourceMappingURL=style.css.map */
