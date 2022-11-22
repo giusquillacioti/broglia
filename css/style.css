@@ -680,7 +680,8 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   }
   body header nav ul li a {
     padding: 10px;
-    font-size: 17.5px;
+    font-size: 17px;
+    white-space: nowrap;
   }
   body main {
     padding-bottom: 30px;
