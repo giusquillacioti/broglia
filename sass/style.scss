@@ -600,6 +600,89 @@ body {
             }
         }
 
+        /* -------------------- CONTACTO -------------------- */
+
+        .contacto {
+            flex-direction: column;
+            justify-content: flex-start;
+            height: auto;
+            margin-top: 15px;
+
+            .info {
+                width: 90vw;
+                margin: auto;
+                align-items: flex-start;
+
+                &--socialmedia {
+                    width: 90vw;
+                    height: 25vh;
+
+                    ul {
+                        li {
+                            i {
+                                width: 23px;
+                            }
+                        }
+                    }
+
+                    p {
+                        margin: 10px 0;
+                    }
+                }
+
+                &--map {
+                    height: 35vh;
+                    width: 90vw;
+                    margin: 15px 0 30px;
+
+                    h3 {
+                        font-size: 20px;
+                    }
+
+                    iframe {
+                        width: 360px;
+                    }
+
+                    &--location {
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            .formContainer {
+                width: 90vw;
+                margin: 30px auto 0;
+
+                .form {
+                    width: 80vw;
+
+                    &--title {
+                        width: auto;
+                        text-align: center;
+                        font-size: 25px;
+                    }
+
+                    &--inputs {
+                        input {
+                            width: 70vw;
+                            font-size: 18px;
+                        }
+
+                        textarea {
+                            font-size: 18px;
+                        }
+                    }
+
+                    &--button {
+                        padding: 10px 30px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
         /* -------------------- FOOTER -------------------- */
 
         footer {
