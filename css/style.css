@@ -649,6 +649,7 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   body {
     /* -------------------- HEADER -------------------- */
     /* -------------------- INDEX -------------------- */
+    /* -------------------- AMOBLAMIENTOS -------------------- */
     /* -------------------- CONTACTO -------------------- */
     /* -------------------- FOOTER -------------------- */
   }
@@ -721,6 +722,62 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   body main section figure {
     height: 255px;
     width: 350px;
+  }
+  body .amoblamientos h1 {
+    font-size: 30px;
+    padding: 15px 0;
+  }
+  body .amoblamientos--subsections {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 30px 0 100px;
+  }
+  body .amoblamientos--subsections--each {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 60vw;
+    height: 45vh;
+    margin: 0 auto 20px;
+  }
+  body .amoblamientos--subsections--each h2 {
+    font-size: 25px;
+  }
+  body .amoblamientos--subsections--each p {
+    font-size: 18px;
+  }
+  body .amoblamientos--info {
+    margin: auto;
+    width: 90vw;
+  }
+  body .amoblamientos--info--subsections {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  body .amoblamientos--info--subsections--detail {
+    width: 80vw;
+    height: 450px;
+    margin: 20px;
+  }
+  body .amoblamientos--info--subsections--detail h3 {
+    font-size: 30px;
+  }
+  body .amoblamientos--info--subsections--detail--presupuesto {
+    width: 60vw;
+  }
+  body .amoblamientos--info--subsections--detail--volver {
+    width: 40vw;
+  }
+  body .amoblamientos--info--subsections figure {
+    margin: 0 auto 20px;
+  }
+  body .amoblamientos--info--subsections figure img {
+    width: 320px;
   }
   body .contacto {
     -webkit-box-orient: vertical;
