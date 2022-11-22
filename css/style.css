@@ -647,8 +647,40 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
 /* -------------------- MEDIA QUERIES -------------------- */
 @media only screen and (max-width: 767px) {
   body {
+    /* -------------------- HEADER -------------------- */
     /* -------------------- INDEX -------------------- */
     /* -------------------- FOOTER -------------------- */
+  }
+  body header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 120px;
+  }
+  body header div {
+    margin-left: 0;
+  }
+  body header div a {
+    font-size: 40px;
+  }
+  body header nav {
+    height: 40px;
+  }
+  body header nav ul {
+    margin-right: 0;
+    width: 360px;
+  }
+  body header nav ul li {
+    height: 40px;
+    text-align: center;
+  }
+  body header nav ul li a {
+    padding: 10px;
+    font-size: 15px;
   }
   body main section {
     -webkit-box-orient: vertical;
@@ -663,7 +695,7 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
             align-items: center;
   }
   body main section div {
-    height: 200px;
+    height: 150px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -681,7 +713,7 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
     text-align: center;
   }
   body main section figure {
-    height: 280px;
+    height: 255px;
     width: 350px;
   }
   body footer {
@@ -697,9 +729,9 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-shadow: 0 0 15px black;
             box-shadow: 0 0 15px black;
     position: relative;
