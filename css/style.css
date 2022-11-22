@@ -411,6 +411,7 @@ body .contacto .formContainer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  scroll-margin-top: 250px;
 }
 
 body .contacto .formContainer .form {
