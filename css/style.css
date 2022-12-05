@@ -78,6 +78,7 @@ body header nav ul {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 10px;
+  margin-bottom: 0;
 }
 
 body header nav ul li {
@@ -88,6 +89,9 @@ body header nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body header nav ul li a {
@@ -101,6 +105,7 @@ body header nav ul li a {
 
 body header nav ul li a:hover {
   background-color: #4E6C50;
+  color: #AA8B56;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -167,10 +172,73 @@ body main section figure {
   height: 400px;
   width: 550px;
   background-size: contain;
-  background-repeat: no-repeat;
   background-position: center;
   -webkit-box-shadow: 0 0 15px black;
           box-shadow: 0 0 15px black;
+}
+
+body .camas {
+  width: 80vw;
+  margin: 40px auto;
+  /* &--una {
+
+        }
+
+        &--dos {
+
+        }
+
+        &--complementos {
+
+        } */
+}
+
+body .camas--general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .camas--general--texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 40vw;
+  color: #8C271E;
+}
+
+body .camas--general--texto h1,
+body .camas--general--texto h2 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+body .camas--general--texto p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+body .camas--general--texto p span {
+  font-style: italic;
+  font-weight: 600;
+}
+
+body .camas .reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 body .amoblamientos h1 {
@@ -180,6 +248,14 @@ body .amoblamientos h1 {
   background-color: #4E6C50;
   border-bottom: 3px solid #AA8B56;
   text-shadow: 2px 2px 5px black;
+}
+
+body .amoblamientos p {
+  color: #8C271E;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: 50px 100px;
 }
 
 body .amoblamientos--subsections {
@@ -201,27 +277,29 @@ body .amoblamientos--subsections--each {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 20vw;
-  height: 50vh;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
   color: #8C271E;
   text-decoration: none;
-  text-align: justify;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 body .amoblamientos--subsections--each h2 {
-  font-size: 30px;
-}
-
-body .amoblamientos--subsections--each p {
-  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 25px;
+  height: 70px;
 }
 
 body .amoblamientos--subsections--each:hover {
@@ -249,6 +327,10 @@ body .amoblamientos--info--subsections {
   margin-bottom: 50px;
   -webkit-box-shadow: 0 0 15px black;
           box-shadow: 0 0 15px black;
+  /* figure {
+                    margin-right: 5vw;
+                    margin-bottom: 0;
+                } */
 }
 
 body .amoblamientos--info--subsections--detail {
@@ -269,11 +351,14 @@ body .amoblamientos--info--subsections--detail {
 
 body .amoblamientos--info--subsections--detail h3 {
   color: #8C271E;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 body .amoblamientos--info--subsections--detail p {
   text-align: justify;
+  margin: 0 0 15px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 body .amoblamientos--info--subsections--detail a {
@@ -287,6 +372,7 @@ body .amoblamientos--info--subsections--detail a {
   font-size: 20px;
   text-align: center;
   padding: 10px 0;
+  margin-bottom: 10px;
 }
 
 body .amoblamientos--info--subsections--detail a:hover {
@@ -303,7 +389,9 @@ body .amoblamientos--info--subsections--detail--volver {
   background-color: #8C271E;
 }
 
-body .amoblamientos--info--subsections figure {
+body .amoblamientos--info--subsections .carousel {
+  width: 300px;
+  height: 400px;
   margin-right: 5vw;
 }
 
@@ -552,6 +640,8 @@ body footer nav ul {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 20vw;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 body footer nav ul li {
@@ -562,8 +652,6 @@ body footer nav ul li a {
   border: 2px solid #AA8B56;
   border-radius: 50px;
   padding: 12px;
-  height: 20px;
-  width: 20px;
   color: #AA8B56;
   text-decoration: none;
   display: -webkit-box;
@@ -599,6 +687,7 @@ body footer div {
 body footer div p {
   color: #AA8B56;
   font-weight: bolder;
+  margin-bottom: 0;
 }
 
 body footer div p span {
@@ -734,6 +823,7 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 30px 0 100px;
+    scroll-margin-top: 115px;
   }
   body .amoblamientos--subsections--each {
     -webkit-box-pack: space-evenly;
@@ -764,9 +854,18 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
     width: 80vw;
     height: 450px;
     margin: 20px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body .amoblamientos--info--subsections--detail h3 {
     font-size: 30px;
+  }
+  body .amoblamientos--info--subsections--detail a {
+    margin: 0;
   }
   body .amoblamientos--info--subsections--detail--presupuesto {
     width: 60vw;
@@ -774,11 +873,8 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   body .amoblamientos--info--subsections--detail--volver {
     width: 40vw;
   }
-  body .amoblamientos--info--subsections figure {
-    margin: 0 auto 20px;
-  }
-  body .amoblamientos--info--subsections figure img {
-    width: 320px;
+  body .amoblamientos--info--subsections .carousel {
+    margin: 0 0 30px;
   }
   body .contacto {
     -webkit-box-orient: vertical;

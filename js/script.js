@@ -1,8 +1,8 @@
-const name = document.getElementById('name')
-const phone = document.getElementById('phone')
-const email = document.getElementById('email')
-const message = document.getElementById('message')
-const formBtn = document.getElementById('formBtn')
+const name = document.getElementById('name'),
+    phone = document.getElementById('phone'),
+    email = document.getElementById('email'),
+    message = document.getElementById('message'),
+    formBtn = document.getElementById('formBtn');
 
 const validateEmail = (email) => {
     const validation = /\S+@\S+\.\S+/;
