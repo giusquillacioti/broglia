@@ -178,19 +178,9 @@ body main section figure {
 }
 
 body .camas {
-  width: 80vw;
+  width: 85vw;
   margin: 40px auto;
-  /* &--una {
-
-        }
-
-        &--dos {
-
-        }
-
-        &--complementos {
-
-        } */
+  color: #8C271E;
 }
 
 body .camas--general {
@@ -198,9 +188,10 @@ body .camas--general {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 30px;
 }
 
 body .camas--general--texto {
@@ -215,13 +206,12 @@ body .camas--general--texto {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 40vw;
-  color: #8C271E;
 }
 
-body .camas--general--texto h1,
-body .camas--general--texto h2 {
+body .camas--general--texto h1 {
   font-size: 40px;
   margin-bottom: 0;
+  font-weight: 600;
 }
 
 body .camas--general--texto p {
@@ -234,11 +224,47 @@ body .camas--general--texto p span {
   font-weight: 600;
 }
 
-body .camas .reverse {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+body .camas--modelos {
+  margin-top: 50px;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
+}
+
+body .camas--modelos--info h2 {
+  font-size: 40px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+body .camas--modelos--info p {
+  margin-top: 10px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+body .camas--modelos--info p span {
+  font-weight: 600;
+}
+
+body .camas--modelos--info table {
+  caption-side: top;
+  text-align: center;
+}
+
+body .camas--modelos--info table caption {
+  color: #8C271E;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+body .camas--modelos--info table th,
+body .camas--modelos--info table td {
+  text-transform: uppercase;
+  border: 1px solid #8C271E;
+  padding: 0 10px;
+  width: 120px;
 }
 
 body .amoblamientos h1 {
@@ -327,10 +353,6 @@ body .amoblamientos--info--subsections {
   margin-bottom: 50px;
   -webkit-box-shadow: 0 0 15px black;
           box-shadow: 0 0 15px black;
-  /* figure {
-                    margin-right: 5vw;
-                    margin-bottom: 0;
-                } */
 }
 
 body .amoblamientos--info--subsections--detail {
@@ -816,6 +838,10 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   body .amoblamientos h1 {
     font-size: 30px;
     padding: 15px 0;
+  }
+  body .amoblamientos p {
+    font-size: 18px;
+    margin: 40px;
   }
   body .amoblamientos--subsections {
     -webkit-box-orient: vertical;

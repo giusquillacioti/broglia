@@ -70,7 +70,7 @@ body {
                         font-size: 20px;
                         color: $color3;
                         transition: all 0.5s;
-                        
+
                         &:hover {
                             background-color: $color2;
                             color: $color3;
@@ -137,34 +137,36 @@ body {
     }
 
     /* -------------------- CAMAS VOLCABLES -------------------- */
-
+    
     .camas {
-        width: 80vw;
+        width: 85vw;
         margin: 40px auto;
+        color: $color5;
+
 
         &--general {
             display: flex;
             margin-bottom: 50px;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            gap: 30px;
 
             &--texto {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
                 width: 40vw;
-                color: $color5;
 
-                h1,
-                h2 {
+                h1 {
                     font-size: 40px;
                     margin-bottom: 0;
+                    font-weight: 600
                 }
 
 
                 p {
                     text-align: justify;
                     font-size: 18px;
-                    
+
                     span {
                         font-style: italic;
                         font-weight: 600;
@@ -173,21 +175,49 @@ body {
             }
         }
 
-        .reverse {
-            flex-direction: row-reverse;
+        &--modelos {
+            margin-top: 50px;
+            box-shadow: 0 0 15px black;
+            
+            &--info {
+                h2 {
+                    font-size: 40px;
+                    font-weight: 600;
+                    font-style: italic;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    margin-top: 10px;
+                    text-align: justify;
+                    font-size: 18px;
+
+                    span {
+                        font-weight: 600;
+                    }
+                }
+
+                table {
+                    caption-side: top;
+                    text-align: center;
+
+                    caption {
+                        color: $color5;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 20px;
+                    }
+
+                    th,
+                    td {
+                        text-transform: uppercase;
+                        border: 1px solid $color5;
+                        padding: 0 10px;
+                        width: 120px;
+                    }
+                }
+            }
         }
-
-        /* &--una {
-
-        }
-
-        &--dos {
-
-        }
-
-        &--complementos {
-
-        } */
     }
 
     /* -------------------- AMOBLAMIENTOS -------------------- */
@@ -301,11 +331,7 @@ body {
                     }
                 }
 
-                /* figure {
-                    margin-right: 5vw;
-                    margin-bottom: 0;
-                } */
-                
+
                 .carousel {
                     width: 300px;
                     height: 400px;
@@ -681,6 +707,11 @@ body {
                 padding: 15px 0;
             }
 
+            p {
+                font-size: 18px;
+                margin: 40px;
+            }
+
             &--subsections {
                 flex-direction: column;
                 margin: 30px 0 100px;
@@ -728,7 +759,7 @@ body {
                         &--presupuesto {
                             width: 60vw;
                         }
-                        
+
                         &--volver {
                             width: 40vw;
                         }
