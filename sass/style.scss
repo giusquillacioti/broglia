@@ -178,8 +178,16 @@ body {
         &--modelos {
             margin-top: 50px;
             box-shadow: 0 0 15px black;
+            height: 70vh;
+            display: flex;
             
             &--info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 80vw;
+                margin: auto;
+
                 h2 {
                     font-size: 40px;
                     font-weight: 600;
