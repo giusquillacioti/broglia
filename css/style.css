@@ -150,7 +150,7 @@ body main section div {
 }
 
 body main section div h1 {
-  font-size: 70px;
+  font-size: 90px;
   text-transform: uppercase;
   color: #8C271E;
   text-shadow: 2px 2px 10px black;
@@ -165,6 +165,8 @@ body main section div p {
   font-size: 20px;
   margin-top: 30px;
   text-shadow: 2px 2px 5px black;
+  max-width: 450px;
+  text-align: justify;
 }
 
 body main section figure {
@@ -224,14 +226,27 @@ body .camas--general--texto p span {
   font-weight: 600;
 }
 
+body .camas--general figure {
+  border: 5px solid #395144;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
+}
+
 body .camas--modelos {
   margin-top: 50px;
   -webkit-box-shadow: 0 0 15px black;
           box-shadow: 0 0 15px black;
-  height: 70vh;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
 }
 
 body .camas--modelos--info {
@@ -245,8 +260,8 @@ body .camas--modelos--info {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 80vw;
-  margin: auto;
+  height: 400px;
+  width: 50vw;
 }
 
 body .camas--modelos--info h2 {
@@ -257,7 +272,7 @@ body .camas--modelos--info h2 {
 }
 
 body .camas--modelos--info p {
-  margin-top: 10px;
+  margin: 10px 0 0;
   text-align: justify;
   font-size: 18px;
 }
@@ -282,8 +297,16 @@ body .camas--modelos--info table th,
 body .camas--modelos--info table td {
   text-transform: uppercase;
   border: 1px solid #8C271E;
+  background-color: #AA8B56;
   padding: 0 10px;
   width: 120px;
+}
+
+body .camas--modelos .carousel {
+  width: 300px;
+  height: 400px;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
 }
 
 body .amoblamientos h1 {
@@ -434,6 +457,8 @@ body .amoblamientos--info--subsections .carousel {
   width: 300px;
   height: 400px;
   margin-right: 5vw;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
 }
 
 body .contacto {
@@ -568,6 +593,7 @@ body .contacto .formContainer .form {
 
 body .contacto .formContainer .form--title {
   width: 25vw;
+  font-size: 25px;
   text-align: start;
 }
 
