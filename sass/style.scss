@@ -99,6 +99,7 @@ body {
             width: 80vw;
             height: 80vh;
             margin: auto;
+            gap: 40px;
 
             div {
                 height: 400px;
@@ -179,6 +180,7 @@ body {
             figure {
                 border: 5px solid $color1;
                 box-shadow: 0 0 15px black;
+                height: 410px;
             }
         }
 
@@ -311,6 +313,7 @@ body {
                 scroll-margin-top: 135px;
                 margin-bottom: 50px;
                 box-shadow: 0 0 15px black;
+                gap: 50px;
 
                 &--detail {
                     width: 40vw;
@@ -651,7 +654,231 @@ body {
 
 /* -------------------- MEDIA QUERIES -------------------- */
 
-@media only screen and (min-width:768px) and (max-width:1023px) {}
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    body {
+
+        /* -------------------- INDEX -------------------- */
+
+        main {
+            section {
+                width: 90vw;
+
+                div {
+                    h1 {
+                        font-size: 70px;
+                    }
+
+                    h2 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                    }
+                }
+
+                figure {
+                    height: 300px;
+                }
+            }
+        }
+
+        /* -------------------- CAMAS VOLCABLES -------------------- */
+
+        .camas {
+            width: 90vw;
+
+            &--general {
+                flex-direction: column;
+                align-items: center;
+
+                &--texto {
+                    width: 85vw;
+
+                    h1 {
+                        margin-bottom: 20px;
+                        text-align: center;
+                    }
+
+                    p {
+                        text-align: center;
+                        line-height: 30px;
+                    }
+                }
+            }
+
+            &--modelos {
+                padding: 30px 0;
+                height: auto;
+                gap: 40px;
+                flex-direction: column;
+
+                &--info {
+                    height: auto;
+                    width: 80vw;
+                }
+
+                .carousel {
+                    width: 450px;
+                    height: 600px;
+                }
+            }
+        }
+
+        /* -------------------- AMOBLAMIENTOS -------------------- */
+
+        .amoblamientos {
+            p {
+                margin: 50px auto 0;
+                width: 80vw;
+            }
+
+            &--subsections {
+                flex-wrap: wrap;
+                width: 80vw;
+                margin: 20px auto 100px;
+                scroll-margin-top: 100px;
+
+                &--each {
+                    width: 300px;
+
+                    h2 {
+                        height: 50px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            &--info {
+                width: 85vw;
+
+                &--subsections {
+                    height: auto;
+                    flex-direction: column;
+                    padding: 40px 0;
+                    gap: 40px;
+
+                    &--detail {
+                        width: 75vw;
+                        margin-left: 0;
+                        align-items: center;
+
+                        h3 {
+                            font-weight: 600;
+                        }
+
+                        p {
+                            width: 75vw;
+                            margin: 0 0 20px;
+                        }
+
+                        &--presupuesto {
+                            width: 30vw;
+                        }
+
+                        &--volver {
+                            width: 15vw;
+                        }
+                    }
+
+                    .carousel {
+                        width: 450px;
+                        height: 600px;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        /* -------------------- CONTACTO -------------------- */
+
+        .contacto {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            gap: 50px;
+
+            .info {
+                width: 90vw;
+                flex-direction: row;
+                justify-content: space-between;
+
+                &--socialmedia {
+                    width: 45vw;
+                    height: 40vh;
+                    justify-content: space-evenly;
+
+                    ul {
+                        li {
+                            margin: 15px 0;
+                        }
+                    }
+                }
+
+                &--map {
+                    justify-content: space-evenly;
+
+                    iframe {
+                        width: 40vw;
+                    }
+                }
+            }
+
+            .formContainer {
+                width: 80vw;
+                scroll-margin-top: 130px;
+
+                .form {
+                    width: 80vw;
+
+                    &--title {
+                        text-align: center;
+                    }
+
+                    &--inputs {
+                        input {
+                            width: 65vw;
+                        }
+                    }
+
+                    &--button {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        /* -------------------- FOOTER -------------------- */
+
+        footer {
+            nav {
+                ul {
+                    width: 30vw;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width:767px) {
     body {
