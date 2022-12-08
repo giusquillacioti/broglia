@@ -302,6 +302,10 @@ body .camas--modelos--info table td {
   width: 120px;
 }
 
+body .camas--modelos--info .tablaVertical {
+  display: none;
+}
+
 body .camas--modelos .carousel {
   width: 300px;
   height: 400px;
@@ -806,6 +810,7 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   body {
     /* -------------------- HEADER -------------------- */
     /* -------------------- INDEX -------------------- */
+    /* -------------------- CAMAS VOLCABLES -------------------- */
     /* -------------------- AMOBLAMIENTOS -------------------- */
     /* -------------------- CONTACTO -------------------- */
     /* -------------------- FOOTER -------------------- */
@@ -832,6 +837,7 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   body header nav ul {
     margin-right: 0;
     width: 360px;
+    padding: 0;
   }
   body header nav ul li {
     height: 40px;
@@ -856,16 +862,15 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 70vh;
   }
   body main section div {
-    height: 150px;
+    height: 400px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   body main section div h1 {
-    font-size: 55px;
+    font-size: 70px;
   }
   body main section div h2 {
     font-size: 20px;
@@ -873,12 +878,67 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   }
   body main section div p {
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
   }
   body main section figure {
     height: 255px;
-    width: 350px;
+    width: 300px;
+  }
+  body .camas--general {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  body .camas--general--texto {
+    width: 85vw;
+  }
+  body .camas--general--texto h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  body .camas--general figure img {
+    width: 85vw;
+    height: auto;
+  }
+  body .camas--modelos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  body .camas--modelos--info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: 75vw;
+  }
+  body .camas--modelos--info h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  body .camas--modelos--info table th,
+  body .camas--modelos--info table td {
+    padding: 0 3px;
+  }
+  body .camas--modelos--info .tablaHorizontal {
+    display: none;
+  }
+  body .camas--modelos--info .tablaVertical {
+    display: block;
+  }
+  body .camas--modelos .carousel {
+    margin-bottom: 15px;
   }
   body .amoblamientos h1 {
     font-size: 30px;
@@ -934,6 +994,10 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   }
   body .amoblamientos--info--subsections--detail h3 {
     font-size: 30px;
+    text-align: center;
+  }
+  body .amoblamientos--info--subsections--detail p {
+    margin: 0;
   }
   body .amoblamientos--info--subsections--detail a {
     margin: 0;
