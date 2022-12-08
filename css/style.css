@@ -104,20 +104,20 @@ body header nav ul li a {
 }
 
 body header nav ul li a:hover {
-  background-color: #4E6C50;
+  background-color: #58805b;
   color: #AA8B56;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 body header nav ul li .selected {
-  background-color: #4E6C50;
+  background-color: #58805b;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 body main {
-  background-color: #4E6C50;
+  background-color: #58805b;
 }
 
 body main section {
@@ -319,7 +319,7 @@ body .amoblamientos h1 {
   font-size: 40px;
   text-align: center;
   padding: 25px 0;
-  background-color: #4E6C50;
+  background-color: #58805b;
   border-bottom: 3px solid #AA8B56;
   text-shadow: 2px 2px 5px black;
 }
@@ -777,7 +777,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #4E6C50;
+  background-color: #58805b;
   -webkit-box-shadow: 0 0 15px black;
           box-shadow: 0 0 15px black;
 }
@@ -1083,6 +1083,9 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
     font-size: 30px;
     margin-bottom: 10px;
     text-align: center;
+  }
+  body .camas--general figure {
+    height: auto;
   }
   body .camas--general figure img {
     width: 85vw;
