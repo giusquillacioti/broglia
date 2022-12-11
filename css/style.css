@@ -47,7 +47,7 @@ body header div {
 }
 
 body header div a {
-  font-size: 45px;
+  font-size: 55px;
   color: #AA8B56;
   text-decoration: none;
   -webkit-transition: all 0.5s;
@@ -104,20 +104,21 @@ body header nav ul li a {
 }
 
 body header nav ul li a:hover {
-  background-color: #58805b;
+  background-color: #4E6C50;
   color: #AA8B56;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 body header nav ul li .selected {
-  background-color: #58805b;
+  background-color: #4E6C50;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
 }
 
 body main {
-  background-color: #58805b;
+  background-color: #4e6c50d2;
 }
 
 body main section {
@@ -133,7 +134,7 @@ body main section {
   width: 80vw;
   height: 80vh;
   margin: auto;
-  gap: 40px;
+  gap: 50px;
 }
 
 body main section div {
@@ -153,7 +154,7 @@ body main section div {
 body main section div h1 {
   font-size: 90px;
   text-transform: uppercase;
-  color: #8C271E;
+  color: #a12115;
   text-shadow: 2px 2px 10px black;
 }
 
@@ -168,6 +169,7 @@ body main section div p {
   text-shadow: 2px 2px 5px black;
   max-width: 450px;
   text-align: justify;
+  font-weight: 600;
 }
 
 body main section figure {
@@ -220,11 +222,12 @@ body .camas--general--texto h1 {
 body .camas--general--texto p {
   text-align: justify;
   font-size: 18px;
+  font-weight: 600;
 }
 
 body .camas--general--texto p span {
   font-style: italic;
-  font-weight: 600;
+  text-transform: uppercase;
 }
 
 body .camas--general figure {
@@ -319,7 +322,7 @@ body .amoblamientos h1 {
   font-size: 40px;
   text-align: center;
   padding: 25px 0;
-  background-color: #58805b;
+  background-color: #4E6C50;
   border-bottom: 3px solid #AA8B56;
   text-shadow: 2px 2px 5px black;
 }
@@ -344,6 +347,10 @@ body .amoblamientos--subsections {
 }
 
 body .amoblamientos--subsections--each {
+  text-decoration: none;
+}
+
+body .amoblamientos--subsections--each div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,12 +366,16 @@ body .amoblamientos--subsections--each {
           align-items: center;
   width: 20vw;
   color: #8C271E;
-  text-decoration: none;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-body .amoblamientos--subsections--each h2 {
+body .amoblamientos--subsections--each div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .amoblamientos--subsections--each div h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,11 +385,7 @@ body .amoblamientos--subsections--each h2 {
   text-align: center;
   font-size: 25px;
   height: 70px;
-}
-
-body .amoblamientos--subsections--each:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  font-weight: 600;
 }
 
 body .amoblamientos--info {
@@ -528,7 +535,7 @@ body .contacto .info--socialmedia ul li a {
 }
 
 body .contacto .info--socialmedia ul li a:hover {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 body .contacto .info--socialmedia p {
@@ -760,7 +767,7 @@ body footer div {
 
 body footer div p {
   color: #AA8B56;
-  font-weight: bolder;
+  font-weight: 600;
   margin-bottom: 0;
 }
 
@@ -777,7 +784,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #58805b;
+  background-color: #4E6C50;
   -webkit-box-shadow: 0 0 15px black;
           box-shadow: 0 0 15px black;
 }
@@ -883,10 +890,10 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
     margin: 20px auto 100px;
     scroll-margin-top: 100px;
   }
-  body .amoblamientos--subsections--each {
+  body .amoblamientos--subsections--each div {
     width: 300px;
   }
-  body .amoblamientos--subsections--each h2 {
+  body .amoblamientos--subsections--each div h2 {
     height: 50px;
     margin-top: 20px;
   }
@@ -1105,6 +1112,9 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
             flex-direction: column;
     height: auto;
     width: 75vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body .camas--modelos--info h2 {
     font-size: 30px;
@@ -1141,7 +1151,7 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
     margin: 30px 0 100px;
     scroll-margin-top: 115px;
   }
-  body .amoblamientos--subsections--each {
+  body .amoblamientos--subsections--each div {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1149,12 +1159,12 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
     width: auto;
     margin: 0 auto;
   }
-  body .amoblamientos--subsections--each h2 {
+  body .amoblamientos--subsections--each div h2 {
     font-size: 25px;
     height: 30px;
     margin: 0;
   }
-  body .amoblamientos--subsections--each p {
+  body .amoblamientos--subsections--each div p {
     font-size: 18px;
   }
   body .amoblamientos--info {

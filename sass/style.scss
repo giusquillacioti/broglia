@@ -34,7 +34,7 @@ body {
             margin-left: 30px;
 
             a {
-                font-size: 45px;
+                font-size: 55px;
                 color: $color3;
                 text-decoration: none;
                 transition: all 0.5s;
@@ -81,6 +81,7 @@ body {
                     .selected {
                         background-color: $color2;
                         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                        font-weight: 600;
                     }
                 }
             }
@@ -90,7 +91,7 @@ body {
     /* -------------------- INDEX -------------------- */
 
     main {
-        background-color: $color2;
+        background-color: #4e6c50d2;
 
         section {
             display: flex;
@@ -99,7 +100,7 @@ body {
             width: 80vw;
             height: 80vh;
             margin: auto;
-            gap: 40px;
+            gap: 50px;
 
             div {
                 height: 400px;
@@ -110,7 +111,7 @@ body {
                 h1 {
                     font-size: 90px;
                     text-transform: uppercase;
-                    color: $color5;
+                    color: #a12115;
                     text-shadow: 2px 2px 10px black;
                 }
 
@@ -125,6 +126,7 @@ body {
                     text-shadow: 2px 2px 5px black;
                     max-width: 450px;
                     text-align: justify;
+                    font-weight: 600;
                 }
             }
 
@@ -167,10 +169,11 @@ body {
                 p {
                     text-align: justify;
                     font-size: 18px;
+                    font-weight: 600;
 
                     span {
                         font-style: italic;
-                        font-weight: 600;
+                        text-transform: uppercase;
                     }
                 }
             }
@@ -276,25 +279,29 @@ body {
             scroll-margin-top: 250px;
 
             &--each {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                align-items: center;
-                width: 20vw;
-                color: $color5;
                 text-decoration: none;
-                transition: all 0.5s;
 
-                h2 {
+                div {
                     display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
                     align-items: center;
-                    text-align: center;
-                    font-size: 25px;
-                    height: 70px;
-                }
+                    width: 20vw;
+                    color: $color5;
+                    transition: all 0.5s;
 
-                &:hover {
-                    transform: scale(1.1);
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+
+                    h2 {
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        font-size: 25px;
+                        height: 70px;
+                        font-weight: 600;
+                    }
                 }
             }
         }
@@ -410,7 +417,7 @@ body {
                             color: $color5;
 
                             &:hover {
-                                font-weight: bold;
+                                font-weight: 600;
                             }
                         }
                     }
@@ -573,7 +580,7 @@ body {
 
             p {
                 color: $color3;
-                font-weight: bolder;
+                font-weight: 600;
                 margin-bottom: 0;
 
                 span {
@@ -738,11 +745,13 @@ body {
                 scroll-margin-top: 100px;
 
                 &--each {
-                    width: 300px;
+                    div {
+                        width: 300px;
 
-                    h2 {
-                        height: 50px;
-                        margin-top: 20px;
+                        h2 {
+                            height: 50px;
+                            margin-top: 20px;
+                        }
                     }
                 }
             }
@@ -975,7 +984,7 @@ body {
 
                 figure {
                     height: auto;
-                    
+
                     img {
                         width: 85vw;
                         height: auto;
@@ -991,6 +1000,7 @@ body {
                     flex-direction: column;
                     height: auto;
                     width: 75vw;
+                    align-items: center;
 
                     h2 {
                         font-size: 30px;
@@ -1041,19 +1051,21 @@ body {
                 scroll-margin-top: 115px;
 
                 &--each {
-                    justify-content: center;
-                    gap: 10px;
-                    width: auto;
-                    margin: 0 auto;
+                    div {
+                        justify-content: center;
+                        gap: 10px;
+                        width: auto;
+                        margin: 0 auto;
 
-                    h2 {
-                        font-size: 25px;
-                        height: 30px;
-                        margin: 0;
-                    }
+                        h2 {
+                            font-size: 25px;
+                            height: 30px;
+                            margin: 0;
+                        }
 
-                    p {
-                        font-size: 18px;
+                        p {
+                            font-size: 18px;
+                        }
                     }
                 }
             }
