@@ -1225,6 +1225,7 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    gap: 40px;
   }
   body .contacto .info--socialmedia {
     width: 90vw;
