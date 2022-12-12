@@ -73,19 +73,19 @@
             </div>
         </div>
 
-        <div class="formContainer" id="form">
-            <div class="form" data-aos="fade-up" data-aos-duration="800">
+        <div class="formContainer">
+            <form id="form" class="form" data-aos="fade-up" data-aos-duration="800">
                 <h3 class="form--title">¡Contactanos!</h3>
 
                 <div class="form--inputs">
-                    <input type="text" name="nombre" id="name" placeholder="Nombre y Apellido">
-                    <input type="number" name="celular" id="phone" placeholder="Celular">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
+                    <input type="number" name="celular" id="celular" placeholder="Celular">
                     <input type="email" name="email" id="email" placeholder="Dirección de correo electrónico">
-                    <textarea name="mensaje" id="message" rows="6" placeholder="Dejanos tu mensaje"></textarea>
+                    <textarea name="mensaje" id="mensaje" rows="6" placeholder="Dejanos tu mensaje"></textarea>
                 </div>
 
-                <input class="form--button" id="formBtn" type="submit" value="Enviar">
-            </div>
+                <input type="submit" id="formBtn" class="form--button" value="Enviar">
+            </form>
         </div>
     </section>
 
@@ -114,6 +114,16 @@
             <p><span>BROGLIA</span> Amoblamientos y Camas Volcables</p>
         </div>
     </footer>
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    
+    <script type="text/javascript">
+    (function(){
+    emailjs.init("uNFB8YboNaAOynTfD");
+    })();
+    </script>
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/script.js"></script>
