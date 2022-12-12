@@ -13,6 +13,7 @@ formBtn.addEventListener('click', () => {
     if (name.value, phone.value, email.value, message.value) {
         if (validateEmail(email.value)) {
             console.log(`${name.value}, ${phone.value}, ${email.value}, ${message.value}`)
+            emailjs.send("service_dh5dyng","template_kltflas");
             Swal.fire({
                 title: `¡Gracias por comunicarte con nosotros!
                 En los próximos días estarás recibiendo una respuesta.`,
