@@ -9,33 +9,9 @@ const validateEmail = (email) => {
     return validation.test(email)
 }
 
-/* 
-
-
-    if (nombre.value, celular.value, email.value, mensaje.value) {
-        if (validateEmail(email.value)) {
-
-        } else {
-            Swal.fire({
-                title: `La dirección de correo electrónico no es válida.`,
-                confirmButtonColor: 'rgb(83, 61, 24)'
-            })
-        }
-    } else {
-        Swal.fire({
-            title: `Todos los campos deben ser completados para enviar el formulario.`,
-            confirmButtonColor: 'rgb(83, 61, 24)'
-        })
-    }
-})
- */
-
-
 document.getElementById('form')
     .addEventListener('submit', function(event) {
     event.preventDefault();
-
-    formBtn.value = 'Enviando...';
 
     const serviceID = 'default_service';
     const templateID = 'template_kltflas';
@@ -43,6 +19,8 @@ document.getElementById('form')
     if (nombre.value, celular.value, email.value, mensaje.value) {
 
         if (validateEmail(email.value)) {
+
+            formBtn.value = 'Enviando...';
 
             emailjs.sendForm(serviceID, templateID, this)
                 .then(() => {
